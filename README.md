@@ -4,6 +4,8 @@ A simplfied version of Yelp for campsites allowing users to add new campgrounds,
 
 My first full application combining HTML, CSS and JS.
 
+The app has been deployed using [Heroku](https://www.heroku.com/) and can be found using this link: https://daneika-yelp-camp.herokuapp.com/
+
 Followed [The Web Developer Bootcamp - Colt Steele](https://www.udemy.com/course/the-web-developer-bootcamp/)
 
 ## Requirements
