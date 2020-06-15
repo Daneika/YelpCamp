@@ -6,11 +6,10 @@
             <p class="lead">YelpCamp</p>
             <div class="list-group">
                 <% for (listCampground of allCampgrounds) { %>
-                <li class="list-group-item">
-                    <a href="/campgrounds/<%= listCampground._id %>">
-                        <%= listCampground.name %>
-                    </a>
-                </li>
+                <a href="/campgrounds/<%= listCampground._id %>"
+                    class="list-group-item <%= campground._id.toString() === listCampground._id.toString() ? 'active' : 'not-active' %>">
+                    <%= listCampground.name %>
+                </a>
                 <% } %>
             </div>
         </div>
