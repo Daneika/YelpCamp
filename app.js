@@ -17,7 +17,7 @@ const commentRoutes = require("./routes/comments"),
   campgroundRoutes = require("./routes/campgrounds"),
   indexRoutes = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/yelp_camp", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/yelp_camp", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -57,6 +57,6 @@ app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-const server = app.listen(8080, function () {
+const server = app.listen(process.env.PORT || 8080, function () {
   console.log("Yelp Camp has started!!!");
 });
