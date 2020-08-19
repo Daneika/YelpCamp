@@ -3,7 +3,8 @@
 
 <head>
     <title>YelpCamp</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/main.css">
 
 </head>
@@ -23,6 +24,9 @@
                     <li><a href="#">Signed in as <%= currentUser.username %></a></li>
                     <li><a href="/logout">Logout</a></li>
                     <% } %>
+                    <a href="https://github.com/Daneika/YelpCamp" target="_blank"><img
+                            style="padding: 5px" src="/images/github-logo.png"
+                            alt="github logo"></img></a>
                 </ul>
             </div>
         </div>
@@ -36,7 +40,7 @@
             <%= error %>
         </div>
         <% } %>
-        <% if(success && success.length > 0) { %>        
+        <% if(success && success.length > 0) { %>
         <div class="alert alert-success" role="alert">
             <%= success %>
         </div>
